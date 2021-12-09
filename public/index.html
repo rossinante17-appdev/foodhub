@@ -31,7 +31,8 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <!-- Creates the navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
       
       <a class="navbar-brand" href="#">
         <span class="h2 font-weight-bold">FOODHUB</span>
@@ -61,27 +62,60 @@
       </div>
     </nav>
 
-    <h2>
-      Who delivers in your neighborhood?
-    </h2>
+    <!-- Creates the "Who Delivers?" section -->
+    <div class="container-fluid who-delivers py-6">
 
-    <form>
-      <div class="form-group">
-        <label for="address_box">
-          Enter your address below.
-        </label>
+      <div class="row">
 
-        <div class="input-group mb-3">
-          <i class="fa fa-map-marker"></i>
+        <div class="col-md-6 offset-md-3 text-white">
 
-          <input id="address_box"  type="text" placeholder="Street address, city, state">
+          <h2 class="font-weight-bold">
+            Who delivers in your neighborhood?
+          </h2>
+      
+          <form>
+            
+            <div class="form-group">
+              <label for="address_box">
+                Enter your address below.
+              </label>
+      
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </div>
+      
+                <input class="form-control" id="address_box"  type="text" placeholder="Street address, city, state">
+              </div>
+            </div>
+      
+            <button class="btn btn-primary btn-block">
+              Find Food
+            </button>
+          </form>
+
         </div>
+
       </div>
 
-      <button>
-        Find Food
-      </button>
-    </form>
+    </div>
+
+    <!-- Creates the "How To" section -->
+    <div class="container">
+
+      <div class="row">
+
+
+      </div>
+
+      <div class="col-md">
+
+      </div>
+
+    </div>
+    
 
     <h2>
       How to Foodhub
